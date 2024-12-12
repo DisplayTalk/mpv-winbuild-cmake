@@ -10,9 +10,9 @@ ExternalProject_Add(libplacebo
         fast_float
         libdovi
         xxhash
-    GIT_REPOSITORY https://github.com/haasn/libplacebo.git
+    GIT_REPOSITORY https://code.videolan.org/haasn/libplacebo.git
     SOURCE_DIR ${SOURCE_LOCATION}
-    GIT_CLONE_FLAGS "--filter=tree:0"
+    GIT_CLONE_FLAGS "-b fix-desat"
     GIT_SUBMODULES ""
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ""
