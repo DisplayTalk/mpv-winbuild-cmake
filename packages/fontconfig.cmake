@@ -9,6 +9,7 @@ ExternalProject_Add(fontconfig
     UPDATE_COMMAND ""
     GIT_REMOTE_NAME origin
     GIT_TAG main
+    GIT_RESET 25f58a52b0b30efbba0ea27c98dc58e411a42b84
     GIT_CLONE_FLAGS "--filter=tree:0"
     PATCH_COMMAND ${EXEC} git am --3way ${CMAKE_CURRENT_SOURCE_DIR}/fontconfig-*.patch
     CONFIGURE_COMMAND ${EXEC} CONF=1 meson setup <BINARY_DIR> <SOURCE_DIR>
