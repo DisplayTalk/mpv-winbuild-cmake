@@ -14,7 +14,6 @@ ExternalProject_Add(libplacebo
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     GIT_SUBMODULES ""
-    GIT_RESET ""
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ""
     COMMAND bash -c "rm -rf <SOURCE_DIR>/3rdparty/glad"
